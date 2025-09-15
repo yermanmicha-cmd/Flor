@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.flor-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.petalos {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.petalo {
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    background-color: #e50914; /* Un tono de rojo vibrante */
+    border-radius: 50% 50% 0 0;
+    transform-origin: bottom center;
+}
+
+.petalo-1 { transform: rotate(0deg); }
+.petalo-2 { transform: rotate(72deg); }
+.petalo-3 { transform: rotate(144deg); }
+.petalo-4 { transform: rotate(216deg); }
+.petalo-5 { transform: rotate(288deg); }
+
+.tallo {
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 120px;
+    background-color: #2e8b57; /* Un tono de verde para el tallo */
+}
